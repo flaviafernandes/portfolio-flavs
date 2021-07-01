@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    margin-bottom: 50px;
     color: #444;
     margin-left: 50px;
     margin-right: 50px;
@@ -31,7 +30,6 @@ h1 {
 }
 
 h2 {
-    color:#A0AFF8;
     font-family: 'Maven Pro', monospace;
     font-weight: 400;
 }
@@ -159,6 +157,7 @@ ul {
 
 .center-size {
     size: 18px !important;
+    color: #A0AFF8;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -227,21 +226,42 @@ input {
     height: 40px
   }
 
+.divider {
+    width: 20px;
+    border-top: 3px solid #A0AFF8;
+    margin: auto;
+    margin-bottom: 70px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
 /* ILLUSTRATION PAGE STYLE */
 
 .title-page {
-    margin-top: 100px;
+    margin-top: 70px;
     font-size: 22px;
     font-weight: lighter;
+    text-align: center;
+}
+
+.job-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .ilustra {
     width: 100%;
 }
 
-.job-title {
-    margin-top: 20px;
-    margin-bottom: 20px;
+.foot {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.foot-style {
+    text-decoration: none;
+    color: #A0AFF8;
 }
 
 /* RESPONSIVE */
