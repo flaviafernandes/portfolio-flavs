@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 50px;
+    color: #444;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+main {
+    margin: 0 50px 50px;
+}
+
+header{
+    height: 155px;
+    align-items: center; 
+    text-align: center;
+    margin: 0 50px;;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+h1 {
+    font-family: 'Maven Pro', monospace;
+    letter-spacing: 4px;
+}
+
+h2 {
+    color:#A0AFF8;
+    font-family: 'Maven Pro', monospace;
+    font-weight: 400;
+}
+
+h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    margin-top: 10px;
+}
+
+.sun {
+    width: 80px;
+}
+
+.image-box {
+    position: relative;
+}
+.image-box .sun-hover {
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.image-box:hover .sun-hover {
+    display: block;
+    align-items: center;
+}
+
+.cta {
+    font-family: 'Maven Pro', monospace;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.links-menu {
+    color: #A0AFF8;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Maven Pro', monospace;
+    font-weight: 400;
+}
+
+a:hover{
+    color: #D2B5DC;
+}
+
+.presentation {
+    /*width: 90%;*/
+    /*min-height: 80vh;*/
+    align-items: center;
+}
+
+.introduction {
+    flex: 1;
+    margin-left: 100px;
+}
+
+.intro-text h1 {
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, #3132D4, rgb(204, 174, 230));
+    -webkit-text-fill-color: transparent;
+}
+.intro-text p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #232946;
+}
+.cta {
+    padding: 50px 0px 100px 0px;
+}
+.cta-select {
+    border-radius: 10px;
+    /*box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
+    border: none;
+    padding: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #3132D4;
+    cursor: pointer;
+    font-family: 'Maven Pro', sans-serif;
+    color: white;
+} 
+
+button:hover {
+    background-color: #EEBBC3;
+    color: white;
+} 
+
+button:focus {
+    background-color: #D47F8C;
+}
+
+.cover {
+    text-align: center;
+}
+
+.img-cover {
+    border-radius: 5px;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.name-portflio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.center-size {
+    size: 18px !important;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+/*SEARCH STYLE*/
+
+form {
+    background-color: #4654e1;
+    width: 200px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+
+::placeholder {
+    color: #fff;
+    opacity: 0.7; 
+  }
+
+#search {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }
+  
+.searching {
+    color: #fff;
+    fill: currentColor;
+    width: 40px;
+    height: 40px
+  }
+
+/* ILLUSTRATION PAGE STYLE */
+
+.title-page {
+    margin-top: 100px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.ilustra {
+    width: 100%;
+}
+
+.job-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1000px) {
+
+    .img-cover {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+    
+    header {
+        margin: 0 20px;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .links-menu {
+        padding: 5px;
+    }
+
+    .img-cover {
+        width: 100%;
+    }
+
+}
