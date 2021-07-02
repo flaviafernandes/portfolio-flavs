@@ -13,16 +13,25 @@ body {
 
 main {
     margin: 0 50px 50px;
+    margin-top: 100px;
 }
 
 header{
     height: 155px;
     align-items: center; 
     text-align: center;
-    margin: 0 50px;;
+    width: -webkit-fill-available;
     justify-content: center;
     padding-top: 20px;
+    /* The sticky class is added to the header with JS when it reaches its scroll position */
+    position: fixed;
+    top: 0;
+    margin-right: 45px;
 }
+
+.sticky + .content {
+    padding-top: 102px;
+  }
 
 h1 {
     font-family: 'Maven Pro', monospace;
@@ -49,6 +58,7 @@ h5 {
 
 .image-box {
     position: relative;
+    padding-top: 20px;
 }
 .image-box .sun-hover {
     position: absolute;
@@ -84,10 +94,15 @@ a:hover{
     color: #D2B5DC;
 }
 
+.title-fix {
+    margin-top: 245px;
+}
+
 .presentation {
     /*width: 90%;*/
     /*min-height: 80vh;*/
     align-items: center;
+    margin-top: 200px;
 }
 
 .introduction {
@@ -153,6 +168,7 @@ ul {
     align-items: center;
     justify-content: center;
     padding-top: 20px;
+    margin-bottom: 40px;
 }
 
 .center-size {
@@ -258,7 +274,6 @@ input {
     text-align: center;
     margin-bottom: 50px;
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .foot-style {
@@ -299,5 +314,7 @@ input {
     .img-cover {
         width: 100%;
     }
-
-}
+    .foot-style {
+        font-size: 12px;
+    }
+}   
