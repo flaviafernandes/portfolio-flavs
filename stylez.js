@@ -15,3 +15,11 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+let btn = document.querySelector('.thework');
+let el = document.querySelector('.myworkbox');
+
+btn.addEventListener('click', function () {
+  console.log(el);
+  el.scrollIntoView({block: "start", behavior: "smooth"});
+});

@@ -13,7 +13,10 @@ body {
 
 main {
     margin: 0 50px 50px;
-    margin-top: 100px;
+}
+
+.works {
+    padding: 0px 100px 0px 100px;
 }
 
 header{
@@ -24,9 +27,9 @@ header{
     justify-content: center;
     padding-top: 20px;
     /* The sticky class is added to the header with JS when it reaches its scroll position */
-    position: fixed;
+    
     top: 0;
-    margin-right: 100px;
+    
 }
 
 .sticky + .content {
@@ -34,6 +37,7 @@ header{
   }
 
 h1 {
+    
     font-family: 'Maven Pro', monospace;
     letter-spacing: 4px;
 }
@@ -71,15 +75,23 @@ h5 {
     align-items: center;
 }
 
-.cta {
-    font-family: 'Maven Pro', monospace;
+.flex-header {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+
+}
+
+.centralize-header {
+    justify-content: center;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 10px;
+    align-items: center;
 }
 
 .links-menu {
@@ -88,6 +100,9 @@ h5 {
     text-decoration: none;
     font-family: 'Maven Pro', monospace;
     font-weight: 400;
+    cursor: default;
+    padding-right: 30px;
+    padding-left: 30px
 }
 
 a:hover{
@@ -95,14 +110,13 @@ a:hover{
 }
 
 .title-fix {
-    margin-top: 245px;
+
 }
 
 .presentation {
     /*width: 90%;*/
     /*min-height: 80vh;*/
     align-items: center;
-    margin-top: 200px;
 }
 
 .introduction {
@@ -122,25 +136,29 @@ a:hover{
     color: #232946;
 }
 .cta {
-    padding: 50px 0px 100px 0px;
+    padding: 20px 20px 20px 20px;
+    font-family: 'Maven Pro', monospace;
 }
 .cta-select {
     border-radius: 10px;
     /*box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
     border: none;
-    padding: auto;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     display: block;
-    width: 200px;
-    height: 50px;
-    background-color: #3132D4;
-    cursor: pointer;
+    width: fit-content;
+    background-color: #7564DB;
     font-family: 'Maven Pro', sans-serif;
     color: white;
-} 
+    cursor: default;
+}
+
+a.cta:hover {
+    background-color: #9387DC;
+    color: white;
+}
 
 button:hover {
     background-color: #EEBBC3;
@@ -150,6 +168,13 @@ button:hover {
 button:focus {
     background-color: #D47F8C;
 }
+
+/*.button-center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
 
 .cover {
     text-align: center;
@@ -173,7 +198,7 @@ ul {
 
 .center-size {
     size: 18px !important;
-    color: #A0AFF8;
+    color: #424242;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -201,6 +226,47 @@ ul {
     display: none;
     overflow: hidden;
   }
+
+.work-box {
+    margin: auto;
+    background: #A0AFF8;
+    border-radius: 10px;
+    width: 792px;
+    height: 190px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.first {
+    margin-top: 50px;
+}
+
+.work-box:hover {
+    opacity: 0.7;
+}
+
+#myImg {
+    border-radius: 10px;
+    position: absolute;
+}
+
+.box-title {
+    padding: 30px;
+    text-align: left;
+    margin-top: 0 !important;
+    position: absolute;
+    color: #232946;
+}
+
+.box-description {
+    text-align: left;
+    margin-top: 10px !important;
+    margin-bottom: 0px !important;
+    position: absolute;
+    padding: 30px;
+    bottom: 0;
+}
 
 /*SEARCH STYLE*/
 
@@ -255,15 +321,23 @@ input {
 
 .title-page {
     margin-top: 70px;
-    font-size: 22px;
+    font-size: 32px;
     font-weight: lighter;
-    text-align: center;
+    text-align: left;
+    color: #232946;
 }
 
 .job-title {
     margin-top: 40px;
     margin-bottom: 20px;
     text-align: center;
+    color: #232946;
+}
+
+.heading-on-job {
+    
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .ilustra {
@@ -292,13 +366,24 @@ input {
 
 .foot {
     text-align: center;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-top: 70px;
 }
 
 .foot-style {
     text-decoration: none;
     color: #A0AFF8;
+}
+
+.about-button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-center {
+    text-align: center;
 }
 
 /* RESPONSIVE */
@@ -309,7 +394,38 @@ input {
         width: 100%;
     }
 
+    .work-box {
+        width: 100%;
+        height: 0;
+        padding-bottom: 20%;
+    }
+
 }
+
+@media screen and (max-width: 800px) {
+    
+    .box-title {
+        padding: 30px;
+        text-align: left;
+        margin-top: 0 !important;
+        position: absolute;
+    }
+    
+    .box-description {
+        text-align: left;
+        margin-top: 10px !important;
+        margin-bottom: 0px !important;
+        position: absolute;
+        padding-left: 20px;
+        padding-bottom: 0px;
+        bottom: 0;
+    }
+
+    .works {
+        padding: 0px 50px 0px 50px;
+    }
+}
+
 
 @media screen and (max-width: 600px) {
 
@@ -318,17 +434,9 @@ input {
         margin-left: 10px;
         margin-bottom: 30px;
     }
-    
-    header {
-        margin-right: 20px;
-    }
 
     main {
         margin: 0;
-    }
-
-    .links-menu {
-        padding: 5px;
     }
 
     .img-cover {
@@ -337,4 +445,37 @@ input {
     .foot-style {
         font-size: 12px;
     }
+
+    .work-box {
+        width: 100%;
+    }
+
+    .works {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .title-page {
+        margin-top: 50px;
+        font-size: 26px;
+        font-weight: lighter;
+        text-align: center;
+        color: #232946;
+    }
+    .links-menu {
+        padding-right: 15px;
+        padding-left: 15px
+    }
 }   
+
+@media screen and (max-width: 470px) {
+    
+    .box-title {
+        font-size: 18px;
+        padding: 20px;
+        text-align: left;
+        margin-top: 0 !important;
+        position: absolute;
+    }
+
+
+}
