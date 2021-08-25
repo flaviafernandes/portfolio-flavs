@@ -388,6 +388,11 @@ input {
     text-align: center;
 }
 
+.insta-images {
+    margin-top: 70px;
+    width: 100%;
+}
+
 /* Style the Image Used to Trigger the Modal */
 #myImg {
     border-radius: 5px;
@@ -521,7 +526,7 @@ input {
         width: 100%;
     }
     .foot-style {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .work-box {
@@ -534,6 +539,7 @@ input {
 
     .title-page {
         margin-top: 50px;
+        padding-bottom: 40px;
         font-size: 26px;
         font-weight: lighter;
         text-align: center;
